@@ -1,0 +1,8 @@
+{% if data %}
+    <p>{{data.number}} ** 2 = {{data.square}}</p>
+{% else %}
+<form method="post">
+    <input type="number" name="number" placeholder="Введите число">
+    <input type="submit" value="Отправить">
+</form>
+{% endif %}
